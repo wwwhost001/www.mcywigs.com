@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    /* flex-direction: column; */
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+     
+ 
+ <div id="container1" style="visibility:visible; 
+ z-index: 0;
+ color: white;
+ display: grid;
+ justify-content: center;
+ align-items: center;
+ background-color: white;
+ width: 100%;
+ margin: 0;
+ position: relative;
+ ">
+<div class="loader"></div>
+ </div>
+
+
+
+ <div id="promt" style="color: black;
+ position: absolute;
+ z-index: 1;
+ visibility: hidden;
+ color: black;
+ display: flex;
+ flex-direction: column;
+ gap: 15px;
+ justify-content: center;
+ align-items: center;
+ background-color: rgb(240, 235, 235);
+ width: 80%;
+ margin: 0;
+ text-align: center;
+ text-decoration: none;
+ font-family: Arial, Helvetica;
+ padding: 20px;
+ border-radius: 10px;
+ "> 
+    <p> Allow this website to send you notifications</p>
+    <div class="btnclass" style="display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5rem;
+    " > 
+        <a href="index.html" style="background-color: white; padding: 10px; text-decoration: none; border-radius: 5px;" >Allow</a>
+        <a href="index.html"    style="background-color: white; padding: 10px; text-decoration: none; border-radius: 5px;" >Dont Allow</a>
+    </div>
+     </div>
+
+ <script>
+ setInterval(show,9000);
+        function show() {
+            document.getElementById("promt")
+            .style.visibility="visible";
+            document.getElementById("container1")
+            .style.visibility="hidden";
+        }
+
+ </script>
+</body>
+</html>
